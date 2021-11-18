@@ -17,7 +17,68 @@
     </div>
 
     <div class="container-fluid">
-        <h1>{{mars.news_title}}</h1>
+        <div class="row">
+            <h2>Latest Mars News</h2>
+            <h3>{{mars.news_title}}</h3>
+            <p>{{mars.news_paragraph}}</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <h2>Featured Mars Image</h2>
+                <img class="img-fluid" src= {{mars.featured_image_url}}>
+            </div>
+            <div class="col-4">
+                <h3>Here are the facts!</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        {{mars.facts_table | safe}}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="text-center">Mars' Hemispheres</h2>
+            <div class='col-3'>
+                <div class="card" style="width: 18rem;">
+                    <img class="img-fluid" src="{{mars.hemisphere_img_urls[0].img_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">{{mars.hemisphere_img_urls[0].title}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class='col-3'>
+                <div class="card" style="width: 18rem;">
+                    <img class="img-fluid" src="{{mars.hemisphere_img_urls[1].img_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">{{mars.hemisphere_img_urls[1].title}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class='col-3'>
+                <div class="card" style="width: 18rem;">
+                    <img class="img-fluid" src="{{mars.hemisphere_img_urls[2].img_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">{{mars.hemisphere_img_urls[2].title}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class='col-3'>
+                <div class="card" style="width: 18rem;">
+                    <img class="img-fluid" src="{{mars.hemisphere_img_urls[3].img_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">{{mars.hemisphere_img_urls[3].title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

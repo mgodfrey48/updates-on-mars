@@ -13,7 +13,7 @@ mongo = PyMongo(app)
 # Route to render index.html template using data from Mongo
 @app.route("/")
 def index():
-    mars = mongo.db.mars_data.find_one()
+    mars = mongo.db.mars.find_one()
 
     return render_template("index.html", mars=mars)
 
