@@ -1,4 +1,4 @@
-# So you wanna know about Mars??
+# Interested in knowing more about Mars??
 
 This repo contains files to scrape various webpages for data, news, and images of Mars. 
 
